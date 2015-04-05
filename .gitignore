@@ -1,0 +1,15 @@
+*.b#*
+*.s#*
+eagle.epf
+
+*.GBL
+*.GBO
+*.GBS
+*.GTL
+*.GTO
+*.GTS
+*.GML
+*.gpi
+*.dri
+.DS_Store
+
