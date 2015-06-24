@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -221,6 +221,28 @@
 </package>
 </packages>
 </library>
+<library name="p.peter-rcl">
+<packages>
+<package name="C0805">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="0" y="1.7" size="0.8" layer="25" font="vector" ratio="12" rot="SR0" align="center">&gt;NAME</text>
+<text x="0" y="-1.7" size="0.8" layer="27" font="vector" ratio="12" rot="SR0" align="center">&gt;VALUE</text>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+<wire x1="-0.35" y1="0.93" x2="0.35" y2="0.93" width="0.15" layer="21"/>
+<wire x1="-0.35" y1="-0.93" x2="0.35" y2="-0.93" width="0.15" layer="21"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -408,13 +430,54 @@ Please make sure your boards conform to these design rules.</description>
 <element name="CON1" library="p.peter-connectors" package="USB-MICRO-SMD-NO_CENTER" value="USBMICRO-NO_CENTER" x="1.27" y="-8.89"/>
 <element name="CON-1" library="p.peter-connectors" package="POGO-1.27-6_PIN-MADWORM" value="" x="-2.54" y="-16.51"/>
 <element name="U1" library="p.peter-regulators" package="SOT23" value="" x="-8.255" y="-15.24"/>
+<element name="C1" library="p.peter-rcl" package="C0805" value="1uF" x="-7.62" y="-20.955"/>
+<element name="C2" library="p.peter-rcl" package="C0805" value="1uF" x="-7.62" y="-24.765"/>
 </elements>
 <signals>
 <signal name="GND">
+<contactref element="U1" pad="P$1"/>
+<contactref element="C1" pad="2"/>
+<contactref element="C2" pad="2"/>
+<contactref element="CON1" pad="GND"/>
+<contactref element="U$1" pad="P$1"/>
 <contactref element="CON-1" pad="P$6"/>
+<wire x1="-6.67" y1="-20.955" x2="-6.67" y2="-24.765" width="0" layer="19" extent="1-1"/>
+<wire x1="-9.205" y1="-16.34" x2="-6.67" y2="-20.955" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.27" y1="-15.875" x2="-6.67" y2="-20.955" width="0" layer="19" extent="1-1"/>
+<wire x1="2.7" y1="-10.19" x2="-1.27" y2="-15.875" width="0" layer="19" extent="1-1"/>
+<wire x1="19.7" y1="-0.485" x2="2.7" y2="-10.19" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="VCC">
+<signal name="+5V">
+<contactref element="U1" pad="P$3"/>
+<contactref element="C1" pad="1"/>
+<contactref element="CON1" pad="VUSB"/>
+<wire x1="-8.255" y1="-14.14" x2="-8.57" y2="-20.955" width="0" layer="19" extent="1-1"/>
+<wire x1="2.7" y1="-7.59" x2="-8.255" y2="-14.14" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="+3V3">
+<contactref element="U1" pad="P$2"/>
+<contactref element="C2" pad="1"/>
+<contactref element="U$1" pad="P$8"/>
 <contactref element="CON-1" pad="P$2"/>
+<wire x1="-7.305" y1="-16.34" x2="-8.57" y2="-24.765" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.81" y1="-15.875" x2="-7.305" y2="-16.34" width="0" layer="19" extent="1-1"/>
+<wire x1="7.7" y1="-13.485" x2="-3.81" y2="-15.875" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SEL">
+<contactref element="U$1" pad="P$6"/>
+</signal>
+<signal name="RX">
+<contactref element="U$1" pad="P$4"/>
+<contactref element="CON-1" pad="P$1"/>
+<wire x1="13.7" y1="-0.485" x2="-3.81" y2="-17.145" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="TX">
+<contactref element="U$1" pad="P$3"/>
+<contactref element="CON-1" pad="P$4"/>
+<wire x1="15.7" y1="-0.485" x2="-2.54" y2="-15.875" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$2">
+<contactref element="CON-1" pad="P$3"/>
 </signal>
 </signals>
 </board>
