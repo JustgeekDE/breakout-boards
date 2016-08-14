@@ -629,55 +629,93 @@ adjusted pad dimesion (0.5 x 3.3 mm) on pin 1 to 5</description>
 </library>
 <library name="p.peter-regulators">
 <packages>
-<package name="SOT23">
-<wire x1="1.5" y1="0.7" x2="1.5" y2="-0.7" width="0.1" layer="51"/>
-<wire x1="1.5" y1="-0.7" x2="-1.5" y2="-0.7" width="0.1" layer="51"/>
-<wire x1="-1.5" y1="-0.7" x2="-1.5" y2="0.7" width="0.1" layer="51"/>
-<wire x1="-1.5" y1="0.7" x2="1.5" y2="0.7" width="0.1" layer="51"/>
-<smd name="P$3" x="0" y="1.1" dx="1.4" dy="1" layer="1" rot="R270"/>
-<smd name="P$1" x="-0.95" y="-1.1" dx="1.4" dy="1" layer="1" rot="R270"/>
-<smd name="P$2" x="0.95" y="-1.1" dx="1.4" dy="1" layer="1" rot="R270"/>
-<wire x1="1.5" y1="-0.2" x2="1.5" y2="0.6" width="0.1" layer="21"/>
-<wire x1="1.5" y1="0.6" x2="1.4" y2="0.7" width="0.1" layer="21" curve="90"/>
-<wire x1="1.4" y1="0.7" x2="0.7" y2="0.7" width="0.1" layer="21"/>
-<wire x1="-0.7" y1="0.7" x2="-1.4" y2="0.7" width="0.1" layer="21"/>
-<wire x1="-1.4" y1="0.7" x2="-1.5" y2="0.6" width="0.1" layer="21" curve="90"/>
-<wire x1="-1.5" y1="0.6" x2="-1.5" y2="-0.2" width="0.1" layer="21"/>
-<wire x1="-0.25" y1="-0.7" x2="0.25" y2="-0.7" width="0.1" layer="21"/>
-<text x="-1.5" y="1.5" size="0.7" layer="25">&gt;NAME</text>
-<text x="-1.5" y="-2.2" size="0.7" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.45" y1="0.65" x2="0.45" y2="1.3" layer="51" rot="R180"/>
-<rectangle x1="0.55" y1="-1.3" x2="1.35" y2="-0.65" layer="51" rot="R180"/>
-<rectangle x1="-1.35" y1="-1.3" x2="-0.55" y2="-0.65" layer="51" rot="R180"/>
+<package name="SOT223">
+<description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;</description>
+<wire x1="3.277" y1="1.778" x2="3.277" y2="-1.778" width="0.2032" layer="21"/>
+<wire x1="3.277" y1="-1.778" x2="-3.277" y2="-1.778" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="-1.778" x2="-3.277" y2="1.778" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="1.778" x2="3.277" y2="1.778" width="0.2032" layer="21"/>
+<smd name="1" x="-2.311" y="-3.099" dx="1.219" dy="2.235" layer="1"/>
+<smd name="2" x="0" y="-3.099" dx="1.219" dy="2.235" layer="1"/>
+<smd name="3" x="2.311" y="-3.099" dx="1.219" dy="2.235" layer="1"/>
+<smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
+<text x="-3.048" y="0.0508" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.048" y="-1.3208" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+<rectangle x1="-1" y1="-1" x2="1" y2="1" layer="35"/>
+</package>
+<package name="TO252">
+<description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;&lt;p&gt;
+TS-003</description>
+<wire x1="3.2766" y1="3.8354" x2="3.277" y2="-2.159" width="0.2032" layer="21"/>
+<wire x1="3.277" y1="-2.159" x2="-3.277" y2="-2.159" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="-2.159" x2="-3.2766" y2="3.8354" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="3.835" x2="3.2774" y2="3.8346" width="0.2032" layer="51"/>
+<wire x1="-2.5654" y1="3.937" x2="-2.5654" y2="4.6482" width="0.2032" layer="51"/>
+<wire x1="-2.5654" y1="4.6482" x2="-2.1082" y2="5.1054" width="0.2032" layer="51"/>
+<wire x1="-2.1082" y1="5.1054" x2="2.1082" y2="5.1054" width="0.2032" layer="51"/>
+<wire x1="2.1082" y1="5.1054" x2="2.5654" y2="4.6482" width="0.2032" layer="51"/>
+<wire x1="2.5654" y1="4.6482" x2="2.5654" y2="3.937" width="0.2032" layer="51"/>
+<wire x1="2.5654" y1="3.937" x2="-2.5654" y2="3.937" width="0.2032" layer="51"/>
+<smd name="3" x="0" y="2.5" dx="5.4" dy="6.2" layer="1"/>
+<smd name="1" x="-2.28" y="-4.8" dx="1" dy="1.6" layer="1"/>
+<smd name="2" x="2.28" y="-4.8" dx="1" dy="1.6" layer="1"/>
+<text x="-3.81" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.7178" y1="-5.1562" x2="-1.8542" y2="-2.2606" layer="51"/>
+<rectangle x1="1.8542" y1="-5.1562" x2="2.7178" y2="-2.2606" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.0226" x2="0.4318" y2="-2.2606" layer="21"/>
+<polygon width="0.1998" layer="51">
+<vertex x="-2.5654" y="3.937"/>
+<vertex x="-2.5654" y="4.6482"/>
+<vertex x="-2.1082" y="5.1054"/>
+<vertex x="2.1082" y="5.1054"/>
+<vertex x="2.5654" y="4.6482"/>
+<vertex x="2.5654" y="3.937"/>
+</polygon>
 </package>
 </packages>
 <symbols>
-<symbol name="REGULATOR-GENERIC">
-<wire x1="5.08" y1="2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<pin name="IN" x="-7.62" y="0" visible="off" length="short"/>
-<pin name="OUT" x="7.62" y="0" visible="off" length="short" rot="R180"/>
-<pin name="GND" x="0" y="-7.62" visible="off" length="short" rot="R90"/>
-<text x="-5.08" y="3.048" size="1.27" layer="95">&gt;NAME</text>
-<text x="2.54" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
-<text x="0" y="-4.572" size="1.27" layer="97" font="vector" ratio="15" align="bottom-center">GND</text>
-<text x="-4.572" y="0" size="1.27" layer="97" font="vector" ratio="15" align="center-left">IN</text>
-<text x="4.572" y="0" size="1.27" layer="97" font="vector" ratio="15" align="center-right">OUT</text>
+<symbol name="REGULATOR-TLV1117">
+<pin name="IN" x="-10.16" y="2.54" visible="pin" length="short"/>
+<pin name="OUT" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="ADJ" x="0" y="-7.62" visible="pin" length="short" rot="R90"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="5.842" size="1.27" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.27" layer="95">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="REGULATOR-XC6206" prefix="U" uservalue="yes">
+<deviceset name="REGULATOR-TLV1117" prefix="IC" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="REGULATOR-GENERIC" x="0" y="0"/>
+<gate name="1117" symbol="REGULATOR-TLV1117" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SOT23" package="SOT23">
+<device name="SOT223" package="SOT223">
 <connects>
-<connect gate="G$1" pin="GND" pad="P$1"/>
-<connect gate="G$1" pin="IN" pad="P$3"/>
-<connect gate="G$1" pin="OUT" pad="P$2"/>
+<connect gate="1117" pin="ADJ" pad="1"/>
+<connect gate="1117" pin="IN" pad="3"/>
+<connect gate="1117" pin="OUT" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-252" package="TO252">
+<connects>
+<connect gate="1117" pin="ADJ" pad="1"/>
+<connect gate="1117" pin="IN" pad="2"/>
+<connect gate="1117" pin="OUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1430,7 +1468,6 @@ adjusted pad dimesion (0.5 x 3.3 mm) on pin 1 to 5</description>
 <parts>
 <part name="U$1" library="p.peter-periphery" deviceset="ESP8266-03" device=""/>
 <part name="CON1" library="p.peter-connectors" deviceset="USB" device="MICRO-NO_CENTER"/>
-<part name="U1" library="p.peter-regulators" deviceset="REGULATOR-XC6206" device="SOT23"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -1453,6 +1490,7 @@ adjusted pad dimesion (0.5 x 3.3 mm) on pin 1 to 5</description>
 <part name="U$4" library="p.peter-connectors" deviceset="GENERIC-1X7" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="SJ1" library="jumper" deviceset="SJ" device=""/>
+<part name="IC1" library="p.peter-regulators" deviceset="REGULATOR-TLV1117" device="SOT223"/>
 </parts>
 <sheets>
 <sheet>
@@ -1461,11 +1499,10 @@ adjusted pad dimesion (0.5 x 3.3 mm) on pin 1 to 5</description>
 <instances>
 <instance part="U$1" gate="G$1" x="43.18" y="43.18"/>
 <instance part="CON1" gate="G$1" x="-25.4" y="55.88"/>
-<instance part="U1" gate="G$1" x="-15.24" y="33.02"/>
-<instance part="P+1" gate="1" x="-30.48" y="38.1"/>
+<instance part="P+1" gate="1" x="-35.56" y="38.1"/>
 <instance part="+3V1" gate="G$1" x="10.16" y="38.1" rot="MR0"/>
-<instance part="GND1" gate="1" x="-15.24" y="15.24"/>
-<instance part="C1" gate="G$1" x="-25.4" y="27.94" rot="MR0"/>
+<instance part="GND1" gate="1" x="-17.78" y="15.24"/>
+<instance part="C1" gate="G$1" x="-30.48" y="27.94" rot="MR0"/>
 <instance part="C2" gate="G$1" x="-5.08" y="27.94"/>
 <instance part="GND2" gate="1" x="-17.78" y="45.72"/>
 <instance part="P+2" gate="1" x="-17.78" y="68.58"/>
@@ -1484,6 +1521,7 @@ adjusted pad dimesion (0.5 x 3.3 mm) on pin 1 to 5</description>
 <instance part="U$4" gate="G$1" x="55.88" y="86.36" rot="R180"/>
 <instance part="GND6" gate="1" x="40.64" y="73.66"/>
 <instance part="SJ1" gate="1" x="2.54" y="33.02"/>
+<instance part="IC1" gate="1117" x="-17.78" y="30.48"/>
 </instances>
 <busses>
 </busses>
@@ -1491,13 +1529,13 @@ adjusted pad dimesion (0.5 x 3.3 mm) on pin 1 to 5</description>
 <net name="+5V" class="0">
 <segment>
 <pinref part="P+1" gate="1" pin="+5V"/>
-<pinref part="U1" gate="G$1" pin="IN"/>
-<wire x1="-22.86" y1="33.02" x2="-25.4" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="33.02" x2="-30.48" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="33.02" x2="-30.48" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="33.02" x2="-30.48" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="33.02" x2="-35.56" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="-35.56" y1="33.02" x2="-35.56" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="-25.4" y1="30.48" x2="-25.4" y2="33.02" width="0.1524" layer="91"/>
-<junction x="-25.4" y="33.02"/>
+<wire x1="-30.48" y1="30.48" x2="-30.48" y2="33.02" width="0.1524" layer="91"/>
+<junction x="-30.48" y="33.02"/>
+<pinref part="IC1" gate="1117" pin="IN"/>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="VBUS"/>
@@ -1544,19 +1582,19 @@ adjusted pad dimesion (0.5 x 3.3 mm) on pin 1 to 5</description>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="-15.24" y1="17.78" x2="-15.24" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="17.78" x2="-17.78" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="-15.24" y1="20.32" x2="-15.24" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="22.86" x2="-25.4" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="20.32" x2="-22.86" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="20.32" x2="-15.24" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="20.32" x2="-7.62" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="20.32" x2="-17.78" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="22.86" x2="-30.48" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-30.48" y1="20.32" x2="-22.86" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="20.32" x2="-17.78" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="20.32" x2="-7.62" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="-7.62" y1="20.32" x2="-5.08" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="20.32" x2="-5.08" y2="22.86" width="0.1524" layer="91"/>
-<junction x="-15.24" y="20.32"/>
+<junction x="-17.78" y="20.32"/>
+<pinref part="IC1" gate="1117" pin="ADJ"/>
 </segment>
 <segment>
 <pinref part="CON1" gate="G$1" pin="GND"/>
@@ -1722,13 +1760,13 @@ adjusted pad dimesion (0.5 x 3.3 mm) on pin 1 to 5</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="OUT"/>
 <wire x1="-2.54" y1="33.02" x2="-5.08" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="33.02" x2="-7.62" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="-5.08" y1="30.48" x2="-5.08" y2="33.02" width="0.1524" layer="91"/>
 <junction x="-5.08" y="33.02"/>
 <pinref part="SJ1" gate="1" pin="1"/>
+<pinref part="IC1" gate="1117" pin="OUT"/>
 </segment>
 </net>
 </nets>
